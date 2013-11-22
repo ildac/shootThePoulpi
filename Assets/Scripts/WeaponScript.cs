@@ -86,7 +86,6 @@ public class WeaponScript : MonoBehaviour {
 			// Pool, to avoid too many projectile in the screen
 			if (shotPool[actualPoolIndex] != null)
 			{	
-				Debug.Log(actualPoolIndex);
 				Destroy(shotPool[actualPoolIndex].gameObject);
 				shotPool[actualPoolIndex] = null;
 			}
