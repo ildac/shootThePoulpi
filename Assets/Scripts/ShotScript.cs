@@ -23,9 +23,5 @@ public class ShotScript : MonoBehaviour {
 		// 2 - Limit the time to live to avoid any leak
 		Destroy (gameObject, 20); //20 sec
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }
