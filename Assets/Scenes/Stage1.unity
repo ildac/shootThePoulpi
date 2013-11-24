@@ -1160,6 +1160,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 637769264}
+  - 114: {fileID: 637769265}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -1178,6 +1179,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &637769265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 637769263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81ae128c90ce644608774e6a3293d80e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokeEffect: {fileID: 19800000, guid: 915d7d00a8ec940ef87c6397b91d67f5, type: 2}
+  fireEffect: {fileID: 19800000, guid: 27cc14581af804352976e704c546fab6, type: 2}
 --- !u!1001 &646586410
 Prefab:
   m_ObjectHideFlags: 0
@@ -2027,7 +2041,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
