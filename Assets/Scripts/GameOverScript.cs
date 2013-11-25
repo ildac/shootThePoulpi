@@ -6,9 +6,18 @@ using System.Collections;
 /// </summary>
 public class GameOverScript : MonoBehaviour {
 
+	private GUISkin skin;
+	
+	void Start () {
+		// Load the skin for the button
+		skin = Resources.Load ("GUISkin") as GUISkin;
+	}
+
 	void OnGUI () {
 		const int buttonWidth = 120;
-		const int buttonHeight = 60;
+		const int buttonHeight = 100;
+
+		GUI.skin = skin;
 
 		if (
 			GUI.Button (
@@ -45,16 +54,6 @@ public class GameOverScript : MonoBehaviour {
 			// Reload the level
 			Application.LoadLevel ("Menu");
 		}
+	}
 
-
-	}
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
