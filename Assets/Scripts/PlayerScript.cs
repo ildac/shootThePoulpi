@@ -68,6 +68,12 @@ public class PlayerScript : MonoBehaviour {
 			Mathf.Clamp (transform.position.y, bottomBorder, topBorder),
 			transform.position.z)
 		);
+	}
 
+	void OnDestroy () {
+		// Game over
+		// Add the script to the parent because the current game
+		// object is likely going to be destroyed immediatly
+		transform.parent.gameObject.AddComponent<GameOverScript> ();	
 	}
 }
